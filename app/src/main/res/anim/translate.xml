@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="4000"
+
+
+
+    >
+    <!--
+        repeatCount 设置重复次数，总次数是重复次数+1
+                当设置该属性，重复播放动画的默认模式是 restart，如果需要设置使用android:repeadMode
+        画面转换位置移动动画效果
+        android:fromXDelta="0"
+        android:fromYDelta="0"
+        android:toXDelta="100%"
+        android:toYDelta="100%"
+        坐标设置 ：控件所在位置左上角为（0，0）
+            绝对坐标 ：int值
+            相对坐标 ：?%p    相对父控件位置 ， 100%p ， 50%p
+                      ?%     相对自身位置
+    -->
+    <translate
+        android:fromXDelta="100"
+        android:fromYDelta="100"
+        android:toXDelta="200%p"
+        android:toYDelta="200%p"
+        android:repeatMode="restart"
+        android:repeatCount="3"
+        />
+
+</set>
